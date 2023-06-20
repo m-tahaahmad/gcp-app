@@ -4,7 +4,7 @@ RUN apk add --no-cache nginx wget
 
 RUN mkdir -p /run/nginx
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY ./nginx.conf /etc/nginx/nginx.conf
 
 RUN mkdir -p /app
 COPY . /app
